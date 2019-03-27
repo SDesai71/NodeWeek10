@@ -41,7 +41,8 @@ app.get('/', (request, response) =>{
 		school: [
 		'BCIT',
 		'SFU',
-		'UBC'
+		'UBC',
+		'Hello'
 		]
 	});
 });
