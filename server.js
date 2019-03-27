@@ -30,10 +30,10 @@ app.use((request, response,next) => {
 	next();
 });
 //Maintenance Page
-app.use((request, response,next) => {
+/*app.use((request, response,next) => {
 	response.render('maintenance.hbs')
 });
-
+*/
 
 app.get('/', (request, response) =>{
 	response.send({
@@ -61,6 +61,6 @@ app.get('/404', (request, response)=>{
 	});
 
 });
-app.listen(8080, () =>{
-	console.log('Server is up and running on port 8080');
+app.listen(port, () =>{
+	console.log(`Server is up and running on port ${port}`);
 });
